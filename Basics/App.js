@@ -1,5 +1,5 @@
 import React, { Component, useState } from 'react';
-import { Text, View, TextInput, Image, Button } from 'react-native';
+import { Text, View, TextInput, Image, Button, ScrollView } from 'react-native';
 
 // React Fundamentals
 // Component:
@@ -182,5 +182,54 @@ const PizzaTranslator = () => {
   );
 }
 
-export default PizzaTranslator;
+// export default PizzaTranslator;
 
+
+// ==================================================
+// ScrollView:
+// import React from 'react';
+// import { Image, ScrollView, Text} from 'react-native';
+
+const logo = {
+  uri: 'https://reactnative.dev/img/tiny_logo.png',
+  width: 64,
+  height: 64
+}
+
+const App = () => (
+  <ScrollView>
+    <Text style={{ fontSize: 96}}> ScrollView me plz</Text>
+    <Image source={logo} />
+    <Image source={logo} />
+    <Image source={logo} />
+    <Image source={logo} />
+    <Image source={logo} />
+    <Text style={{ fontSize: 96 }}>If youn like</Text>
+    <Image source={logo} />
+    <Image source={logo} />
+    <Image source={logo} />
+    <Image source={logo} />
+    <Image source={logo} />
+    <Text style={{ fontSize: 96 }}>Scrolling down</Text>
+    <Image source={logo} />
+    <Image source={logo} />
+    <Image source={logo} />
+    <Image source={logo} />
+    <Image source={logo} />
+    <Text style={{ fontSize:96 }}>What's the best</Text>
+    <Image source={logo} />
+    <Image source={logo} />
+    <Image source={logo} />
+    <Image source={logo} />
+    <Image source={logo} />
+    <Text style={{ fontSize: 96}}>Framework around?</Text>
+    <Image source={logo} />
+    <Image source={logo} />
+    <Image source={logo} />
+    <Image source={logo} />
+    <Image source={logo} />
+    <Text style={{ fontSize: 80}}>React Native</Text>
+  </ScrollView>
+);
+
+// export default App;
