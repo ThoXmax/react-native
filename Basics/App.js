@@ -318,11 +318,11 @@ const SectionListBasics = () => {
   )
 }
 
-//  export default SectionListBasics;
+export default SectionListBasics;
 
 
 // ==================================================
-//platform specific code
+//platform specific code:
 // import { Platform, StyleSheet } from 'react-native';
 
 const styles2 = StyleSheet.create({
