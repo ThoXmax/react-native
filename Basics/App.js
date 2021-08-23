@@ -1,5 +1,5 @@
 import React, { Component, useState } from 'react';
-import { Text, View, TextInput, Image, Button, ScrollView, FlatList, StyleSheet, SectionList } from 'react-native';
+import { Text, View, TextInput, Image, Button, ScrollView, FlatList, StyleSheet, SectionList, Platform } from 'react-native';
 
 // React Fundamentals
 // Component:
@@ -318,4 +318,39 @@ const SectionListBasics = () => {
   )
 }
 
-export default SectionListBasics;
+//  export default SectionListBasics;
+
+
+// ==================================================
+//platform specific code
+// import { Platform, StyleSheet } from 'react-native';
+
+const styles2 = StyleSheet.create({
+  container: {
+    flex: 1,
+    paddingTop: 22,
+    ...Platform.select({
+      ios: {
+        backgroundColor: 'red'
+      },
+      android: {
+        backgroundColor: 'green'
+      },
+      default: {
+        // other platforms, web for example
+        backgroundColor: 'blue'
+      }
+    })
+  },
+  sectionHeader: {
+    fontSize: 14,
+    fontWeight: 'bold',
+    backgroundColor: 'rgba(247, 247, 247, 1.0)'
+  },
+  item: {
+    padding: 10,
+    fontSize: 18,
+    height: 44
+  }
+});
+
